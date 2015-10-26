@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+    
+    <head>
+        <title>index</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="generator" content="Wakanda GUIDesigner"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="WAF.catalog" content="Cartes"/>
+        <meta name="WAF.packageJson"/>
+        <meta name="wakanda-version" content="10 build 10.181645"/>
+        <meta name="wakanda-build" content="10.181645"/>
+        <meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
+        <meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
+    
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Cartes" data-lib="WAF" data-id="cartes" data-dataType="string" data-autoLoad="true" content="cartes"/><meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
+</head>
+    
+    <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="default" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
+        <div id="container1" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container waf-container-level-0 waf-level-0">
+
+<div class="container">
+	<h1>Map with SVG paths defined through the legend to plot some cities</h1>
+		<div class="mapcontainer">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+            <div class="plotLegend">	<span>Alternative content for the legend</span>
+    
+            </div>
+            
+		</div>
+</div>
+ 	 	</div>
+    	<div id="dataGrid1" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID','type':'long'},{'sourceAttID':'carteName','colID':'carteName','width':'150','title':'carteName','type':'string'},{'sourceAttID':'carteDate','colID':'carteDate','width':'100','title':'carteDate','type':'date'}]" data-binding="cartes" class="waf-widget waf-dataGrid"></div>
+ 		<input id="textField1" data-type="textField" data-lib="WAF" type="text" data-binding="cartes.carteHTML" class="waf-widget waf-textField" data-label="carteHTML" data-label-position="left" data-multiline="false" data-readOnly="false" data-password="false" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-left="true" data-constraint-top="true"/>
+		<label id="label1" data-type="label" data-lib="WAF" for="textField1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-textfield" data-constraint-left="true" data-constraint-top="true">carteHTML</label>
+		<button id="button1" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-constraint-left="true" data-constraint-top="true" data-binding="cartes"></button>
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,150 @@
+{
+	"publishAsJSGlobal": true,
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Cartes": {
+				"panelColor": "#D8D8D8",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			},
+			"Areas": {
+				"panelColor": "#C3D69B",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 451,
+						"Y": 14
+					}
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Areas",
+			"className": "Areas",
+			"collectionName": "AreasCollection",
+			"matchTable": "Area,Areas",
+			"scope": "public",
+			"publishAsJSGlobal": true,
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"indexKind": "btree",
+					"primKey": true
+				},
+				{
+					"name": "areaPathName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"unique": false
+				},
+				{
+					"name": "areaPath",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "areaCarte",
+					"kind": "relatedEntity",
+					"matchColumn": "carte,cartes",
+					"scope": "public",
+					"type": "Cartes",
+					"path": "Cartes"
+				}
+			]
+		},
+		{
+			"name": "Cartes",
+			"className": "Cartes",
+			"collectionName": "CartesCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"indexKind": "btree",
+					"primKey": true
+				},
+				{
+					"name": "carteName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "boolWakanded",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "carteDate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "carteLegend",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object"
+				},
+				{
+					"name": "cartePlot",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object"
+				},
+				{
+					"name": "carteOptions",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object"
+				},
+				{
+					"name": "carteHTML",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "carteAreas",
+					"kind": "relatedEntities",
+					"matchColumn": "Areas",
+					"scope": "public",
+					"type": "AreasCollection",
+					"reversePath": true,
+					"path": "areaCarte"
+				}
+			]
+		}
+	],
+	"type": []
+}

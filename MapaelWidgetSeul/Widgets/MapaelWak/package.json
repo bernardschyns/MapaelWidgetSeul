@@ -1,0 +1,34 @@
+{
+    "name": "MapaelWak",
+    "studioName": "MapaelWak",
+    "category": "Custom Widgets",
+    "iconPath": "/icons/widget.png",
+    "author": "Widget Developer",
+    "contributors": [
+        "Developer 1",
+        "Developer 2"
+    ],
+    "version": "1.0.0",
+    "copyright": "(c) 2014 Widget Developer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/developer/Widget.git"
+    },
+    "keywords": ["wakanda", "widget"],
+    "engines": {"wakanda": ">= 9"},
+    "license": "MIT",
+    "externalWidgets": [ ],
+    "loadDependencies": [
+        {"id": "Widget_V2"},
+        {"id": "MapaelWak/mapaeljs/js/raphael2.1.4.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "MapaelWak/mapaeljs/js/jquery.mapael.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "MapaelWak/mapaeljs/js/jquery.mousewheel.min.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "MapaelWak/mapaeljs/js/maps/france_departments.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"}, 
+        {"id": "MapaelWak/mapaeljs/js/maps/world_countries.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},  
+        {"id": "MapaelWak/mapaeljs/js/maps/usa_states.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},           
+        {"id": "MapaelWak/mapaeljs/js/maps/douleur2.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},                      
+        {"id": "MapaelWak/widget.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
+        {"id": "MapaelWak/css/widget.css", "version": "1.0.0","studioOnly": false, "path": "WIDGETS_CUSTOM"},
+        {"id": "MapaelWak/designer.js", "studioOnly": true, "version": "1.0.0", "path": "WIDGETS_CUSTOM"}
+    ]
+}
